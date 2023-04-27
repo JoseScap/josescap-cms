@@ -4,6 +4,7 @@ import Users from './collections/Users';
 import Projects from './collections/Projects';
 import Images from './collections/Images';
 import Technologies from './collections/Technologies';
+import Resumes from './collections/Resumes';
 
 export default buildConfig({
   serverURL: 'http://localhost:3000',
@@ -14,7 +15,8 @@ export default buildConfig({
     Users,
     Projects,
     Images,
-    Technologies
+    Technologies,
+    Resumes
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts')
