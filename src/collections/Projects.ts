@@ -3,7 +3,7 @@ import { CollectionConfig } from "payload/types";
 const Project: CollectionConfig = {
   slug: "projects",
   admin: {
-    defaultColumns: ['name', 'description', 'technologies', 'repository', 'demo', 'public', 'mainImage', 'mainImage','images','updatedAt'],
+    defaultColumns: ['name', 'description', 'technologies', 'repositories', 'demos', 'public', 'mainImage', 'mainImage','images','updatedAt'],
     useAsTitle: 'name'
   },
   access: {
@@ -35,7 +35,7 @@ const Project: CollectionConfig = {
       ]
     },
     {
-      name: "repository",
+      name: "repositories",
       required: true,
       type: "array",
       fields: [
@@ -59,7 +59,7 @@ const Project: CollectionConfig = {
       ]
     },
     {
-      name: "demo",
+      name: "demos",
       type: "array",
       fields: [
         {
